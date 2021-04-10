@@ -1,0 +1,9 @@
+.filter-container {
+  width: 50%;
+  height: 80px;
+  margin: auto;
+  background: white;
+  border-radius: 7px;
+  transform: translateY(-50%);
+  box-shadow: 1px 7px 15px 4px hsl(180, 29%, 50%, 0.25);
+}
