@@ -1,9 +1,45 @@
 .filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
   width: 50%;
-  height: 80px;
   margin: auto;
   background: white;
   border-radius: 7px;
-  transform: translateY(-50%);
+
+  /* 
+    transform: translateY(-50%); - in this case JobList goes up to the header when filterContainer gets empty
+      or
+    position: absolute; - in this case everything is ok, but looks a bit dirty
+    top: 110px;
+    left: 25%;
+  */
+  position: absolute;
+  top: 110px;
+  left: 25%;
+
   box-shadow: 1px 7px 15px 4px hsl(180, 29%, 50%, 0.25);
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+.clear-button {
+  margin-top: 5px;
+  margin-left: auto;
+  color: hsl(180, 29%, 50%);
+}
+
+.clear-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 930px) {
+  .filter-container {
+    width: 98%;
+    left: 0;
+    right: 0;
+  }
 }

@@ -1,0 +1,36 @@
+.filter-tag-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  padding: 0, 40px 0 0;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.filter-tag {
+  color: hsl(180, 29%, 50%);
+  font-size: 14px;
+  font-weight: bold;
+  background-color: hsl(180, 46%, 93%);
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+/*
+  hot to center this &times; properly?
+*/ 
+.close-button {
+  height: 100%;
+  background: hsl(180, 29%, 50%);
+  color: white;
+  cursor: pointer;
+  padding: 11px 10px 7px 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.close-button:hover {
+  color: white;
+  background-color: hsl(180, 14%, 20%);
+}
